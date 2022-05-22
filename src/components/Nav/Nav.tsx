@@ -4,11 +4,11 @@ import './Nav.scss';
 function Nav() {
   return (
     <nav className="nav">
-      About
+       About
       Mint
       Traits
       Details
-      FAQ
+      FAQ 
     </nav>
   );
 }
