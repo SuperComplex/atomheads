@@ -100,27 +100,37 @@
     @include breakpoint(lg) {
       height: 220px;
     }
-    background: url("~/public/img/ax-1.png") no-repeat,
-                url("~/public/img/ax-2.png") no-repeat,
-                url("~/public/img/ax-3.png") no-repeat,
-                url("~/public/img/ax-4.png") no-repeat,
-                url("~/public/img/ax-5.png") no-repeat,
-                url("~/public/img/ax-6.png") no-repeat;
-    @media screen and (max-width: 599px) {
-      background-position: 15% 100%, 85% 100%;
-      background-size: 0, 0, contain, contain, 0, 0;
+    // background: url("~/public/img/ax-1.png") no-repeat,
+    //             url("~/public/img/ax-2.png") no-repeat,
+    //             url("~/public/img/ax-3.png") no-repeat,
+    //             url("~/public/img/ax-4.png") no-repeat,
+    //             url("~/public/img/ax-5.png") no-repeat,
+    //             url("~/public/img/ax-6.png") no-repeat;
+    // @media screen and (max-width: 599px) {
+    //   background-position: 15% 100%, 85% 100%;
+    //   background-size: 0, 0, contain, contain, 0, 0;
+    // }
+    // @media screen and (min-width: 600px) and (max-width: 1199px) {
+    //   background-position: 10% 100%, 50% 100%, 90% 100%;
+    //   background-size: 0, 0, contain, contain, contain, 0;
+    // }
+    // @media screen and (min-width: 1200px) and (max-width: 1399px) {
+    //   background-position: 5% 100%, 35% 100%, 65% 100%, 95% 100%;
+    //   background-size: 0, contain, contain, contain, contain, 0;
+    // }
+    // @media screen and (min-width: 1400px){
+    //   background-position: 2% 100%, 21% 100%, 41% 100%, 59% 100%, 79% 100%, 98% 100%;
+    //   background-size: contain, contain, contain, contain, contain, contain;
+    // }
+    .slide {
+      height: 170px;
+      padding: 0 10px;
+      @include breakpoint(lg) {
+        height: 220px;
+      }
     }
-    @media screen and (min-width: 600px) and (max-width: 1199px) {
-      background-position: 10% 100%, 50% 100%, 90% 100%;
-      background-size: 0, 0, contain, contain, contain, 0;
-    }
-    @media screen and (min-width: 1200px) and (max-width: 1399px) {
-      background-position: 5% 100%, 35% 100%, 65% 100%, 95% 100%;
-      background-size: 0, contain, contain, contain, contain, 0;
-    }
-    @media screen and (min-width: 1400px){
-      background-position: 2% 100%, 21% 100%, 41% 100%, 59% 100%, 79% 100%, 98% 100%;
-      background-size: contain, contain, contain, contain, contain, contain;
+    .img {
+      height: 100%;
     }
   }
 }
