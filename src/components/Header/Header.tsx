@@ -7,12 +7,12 @@ function Header() {
   return (
     <header className="header">
       <Logo/>
-      <Nav/>
+      {/* <Nav/>
       About
       Mint
       Traits
       Details
-      FAQ
+      FAQ */}
     </header>
   );
 }
