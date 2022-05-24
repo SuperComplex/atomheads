@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/atom heads/i);
+  const linkElement = screen.getByText(/The FREE, infinitely Inclusive, & Carbon Neutral NFT/i);
   expect(linkElement).toBeInTheDocument();
 });

@@ -1,0 +1,26 @@
+// fonts
+$font-base: SpaceMono, sans-serif;
+
+// colors
+$white: #ffffff;
+// $black: #000000;
+$yellow: #FECD0A;
+$black: #231F20;
+
+//base of BS breakpoints
+$screen-xs:					0;
+$xs:						$screen-xs;
+$screen-sm:					576px;
+$sm:						$screen-sm;
+$screen-md:					768px;
+$md:						$screen-md;
+$screen-lg:					992px;
+$lg:						$screen-lg;
+$screen-xl:					1200px;
+$xl:						$screen-xl;
+
+$pad-x: 15px;
+$pad-y: 15px;
+$maxcontentwidth: 1920px;
+$header-height: 100px;
+$header-sm-height: 50px;
