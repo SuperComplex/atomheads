@@ -6,7 +6,7 @@ function SecondSection() {
       <div className="second-section-container wrapper">
         <div className="left-container">
           <div className="img1-container">
-            <img className="img1" src="/img/second-section.png" alt="second" />
+            <img className="img1" src="/img/second-section.svg" alt="second" />
           </div>
         </div>
         <div className="right-container">
