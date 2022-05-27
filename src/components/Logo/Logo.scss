@@ -1,9 +1,9 @@
-
 @import 'assets/common.scss';
 .logo-container {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @include breakpoint(xl) {
     display: block;
+    flex: 0 0 auto;
     width: 66px;
     height: 66px;
     border-radius: 50%;

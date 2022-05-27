@@ -1,15 +1,42 @@
 @import 'assets/common.scss';
 .header {
+  display: flex;
   position: absolute;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1;
   top: 0;
   left: 0;
+  height: 50px;
   width: 100%;
   height: $header-sm-height;
-  padding: 20px 35px;
-  border: 1px solid #aaa;
-  @media screen and (min-width: 1200px) {
+  padding: 15px 20px;
+  // border: 1px solid #aaa;
+  @include breakpoint(xl) {
     height: $header-height;
     padding: 15px 35px;
+  }
+}
+.connect-wallet {
+  @include outline(0);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 45px;
+  background-color: $black;
+  color: $white;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  border: none;
+  border-radius: 33px;
+  cursor: pointer;
+  font-family: 'Wicked Mouse';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: nowrap;
+  &:hover {
+    background-color: $white;
+    color: $black;
   }
 }

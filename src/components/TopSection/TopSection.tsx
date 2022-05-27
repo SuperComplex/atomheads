@@ -5,11 +5,11 @@ const settings = {
   dots: false,
   infinite: true,
   autoplay: true,
+  variableWidth: true,
+  speed: 7000,
+  autoplaySpeed: 0,
   slidesToShow: 1,
   slidesToScroll: 1,
-  variableWidth: true,
-  speed: 8000,
-  autoplaySpeed: 0,
   cssEase: "linear",
   pauseOnHover: false,
   draggable: false,
@@ -64,6 +64,36 @@ function TopSection() {
             <div>
               <div className="slide">
                 <img className="img" src="/img/ax-6.png" alt="slide6" />
+              </div>
+            </div>
+            <div>
+              <div className="slide">
+                <img className="img" src="/img/ax-1.png" alt="slide7" />
+              </div>
+            </div>
+            <div>
+              <div className="slide">
+                <img className="img" src="/img/ax-2.png" alt="slide8" />
+              </div>
+            </div>
+            <div>
+              <div className="slide">
+                <img className="img" src="/img/ax-3.png" alt="slide9" />
+              </div>
+            </div>
+            <div>
+              <div className="slide">
+                <img className="img" src="/img/ax-4.png" alt="slide10" />
+              </div>
+            </div>
+            <div>
+              <div className="slide">
+                <img className="img" src="/img/ax-5.png" alt="slide11" />
+              </div>
+            </div>
+            <div>
+              <div className="slide">
+                <img className="img" src="/img/ax-6.png" alt="slide12" />
               </div>
             </div>
           </Slider>

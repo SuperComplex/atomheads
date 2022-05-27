@@ -5,7 +5,7 @@
   padding: $header-sm-height $pad-x 180px;
   background-color: $yellow;
   min-height: 100vh;
-  @include breakpoint(lg) {
+  @include breakpoint(xl) {
     // min-height: 959px;
     padding: $header-height $pad-x 230px;
   }
@@ -29,7 +29,7 @@
     width: 100%;
     padding: $pad-y 0;
     justify-content: space-evenly;
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       align-items: stretch;
       flex: 1 1 auto;
       width: 50%;
@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       flex: 1 1 auto;
       flex-direction: column;
       width: 50%;
@@ -63,7 +63,7 @@
       margin-bottom: 30px;
       max-width: 300px;
     }
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       width: 68%;
       margin-bottom: 40px;
     }
@@ -73,7 +73,7 @@
       width: 95%;
       max-width: 400px;
     }
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       width: 68%;
       margin-bottom: 50px;
     }
@@ -84,7 +84,7 @@
       transform: rotate(-15deg);
       max-width: 300px;
     }
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       width: 46%;
     }
   }
@@ -97,7 +97,7 @@
     bottom: 0;
     width: 100%;
     height: 170px;
-    @include breakpoint(lg) {
+    @include breakpoint(xl) {
       height: 220px;
     }
     // background: url("~/public/img/ax-1.png") no-repeat,
@@ -125,7 +125,7 @@
     .slide {
       height: 170px;
       padding: 0 10px;
-      @include breakpoint(lg) {
+      @include breakpoint(xl) {
         height: 220px;
       }
     }

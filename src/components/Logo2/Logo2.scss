@@ -1,0 +1,29 @@
+@import 'assets/common.scss';
+.Logo2 {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo2-container {
+    &:first-child {
+      width: 80px;
+      margin-right: 10px;
+      @include breakpoint(xl) {
+        width: 112px;
+        margin-right: 17px;
+      }
+    }
+    &:last-child {
+      width: 116px;
+      @include breakpoint(xl) {
+        width: 161px;
+      }
+    }
+    .logo2-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center center;
+    }
+  }
+}
