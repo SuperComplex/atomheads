@@ -1,8 +1,19 @@
-.nav { display: flex;
-       	height: 100px;
-        padding:  35px;
-        margin: 35px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
+.nav {
+  padding: 0 30px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 15px;
+  margin: 35px;
+  font-family: 'Wicked Mouse';
+  font-size: 14px;
 }
