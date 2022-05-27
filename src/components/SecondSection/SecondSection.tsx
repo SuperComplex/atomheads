@@ -14,7 +14,7 @@ function SecondSection() {
             All matter is made of atoms & likewise, all atoms are made to matter.
           </p>
           <p className="t2">
-            -Bill Nye, the atom guy
+            -Bill Nye, <br className="sm-only"/>the atom guy
           </p>
         </div>
       </div>
