@@ -11,9 +11,32 @@
   width: 100%;
   height: $header-sm-height;
   padding: 15px 20px;
-  border: 1px solid #aaa;
+  // border: 1px solid #aaa;
   @include breakpoint(xl) {
     height: $header-height;
     padding: 15px 35px;
+  }
+}
+.connect-wallet {
+  @include outline(0);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  height: 45px;
+  background-color: $black;
+  color: $white;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  border: none;
+  border-radius: 33px;
+  cursor: pointer;
+  font-family: 'Wicked Mouse';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: nowrap;
+  &:hover {
+    background-color: $white;
+    color: $black;
   }
 }

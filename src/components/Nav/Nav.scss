@@ -3,7 +3,7 @@
   display: none;
   @include breakpoint(xl) {
     display: block;
-    padding: 0 30px;
+    padding: 0 25px;
   }
 }
 .nav-list {
@@ -20,9 +20,11 @@
   padding: 14px 15px;
   font-family: 'Wicked Mouse';
   font-size: 14px;
+  line-height: 1.6;
   color: $black;
   transition: color .3s ease-in-out;
   cursor: pointer;
+  white-space: nowrap;
   &:hover {
     color: $white;
   }

@@ -1,4 +1,5 @@
 // import React from 'react';
+
 import Logo from 'components/Logo/Logo';
 import Nav from 'components/Nav/Nav';
 import Soc from 'components/Soc/Soc';
@@ -12,6 +13,9 @@ function Header() {
       <Nav/>
       <Logo2/>
       <Soc/>
+      <button className="connect-wallet">
+        Connect wallet
+      </button>
     </header>
   );
 }
