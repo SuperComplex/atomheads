@@ -18,8 +18,11 @@
   }
 }
 .connect-wallet {
+  display: none;
+  @include breakpoint(xl) {
+    display: inline-flex;
+  }
   @include outline(0);
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
