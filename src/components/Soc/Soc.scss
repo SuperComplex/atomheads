@@ -1,0 +1,25 @@
+@import 'assets/common.scss';
+.Soc{
+  display: none;
+  @include breakpoint(xl) {
+    display: flex;
+    padding: 0 30px;
+  }
+  .soc-link {
+    .soc-icon {
+      path {
+        transition: fill .3s ease-in-out;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+    &:hover {
+      .soc-icon {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

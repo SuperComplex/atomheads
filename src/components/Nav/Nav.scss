@@ -1,5 +1,10 @@
+@import 'assets/common.scss';
 .nav {
-  padding: 0 30px;
+  display: none;
+  @include breakpoint(xl) {
+    display: block;
+    padding: 0 30px;
+  }
 }
 .nav-list {
   display: flex;
@@ -13,7 +18,12 @@
   justify-content: center;
   align-items: center;
   padding: 14px 15px;
-  margin: 35px;
   font-family: 'Wicked Mouse';
   font-size: 14px;
+  color: $black;
+  transition: color .3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+  }
 }

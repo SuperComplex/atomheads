@@ -2,8 +2,10 @@ import './Logo.scss';
 
 function Logo() {
   return (
-    <div className="logo-container">
-    </div>
+    <a href="/">
+      <div className="logo-container">
+      </div>
+    </a>
   );
 }
 

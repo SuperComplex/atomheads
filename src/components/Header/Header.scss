@@ -1,15 +1,19 @@
+@import 'assets/common.scss';
 .header {
   display: flex;
   position: absolute;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  padding: 15px 35px;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  height: $header-sm-height;
+  padding: 15px 20px;
   border: 1px solid #aaa;
-  @media screen and (min-width: 1200px) {
-    height: 100px;
+  @include breakpoint(xl) {
+    height: $header-height;
+    padding: 15px 35px;
   }
 }

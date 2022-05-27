@@ -1,8 +1,8 @@
 // import React from 'react';
 import Logo from 'components/Logo/Logo';
 import Nav from 'components/Nav/Nav';
-import Socitem from 'components/Socitem/Socitem';
-import NewSection from 'components/NewSection/NewSection';
+import Soc from 'components/Soc/Soc';
+import Logo2 from 'components/Logo2/Logo2';
 import './Header.scss';
 
 function Header() {
@@ -10,9 +10,8 @@ function Header() {
     <header className="header">
       <Logo/>
       <Nav/>
-      <NewSection/>
-      <Socitem/>
-      
+      <Logo2/>
+      <Soc/>
     </header>
   );
 }

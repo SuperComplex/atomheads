@@ -1,7 +1,12 @@
+@import 'assets/common.scss';
 .logo-container {
-  flex: 0 0 auto;
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
-  background-color: #231F20;
+  display: none;
+  @include breakpoint(xl) {
+    display: block;
+    flex: 0 0 auto;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: $black;
+  }
 }
