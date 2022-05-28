@@ -1,0 +1,65 @@
+@import 'assets/common.scss';
+.sixth-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  padding: 40px $pad-x 90px;
+  background-color: $red;
+  @include breakpoint(xl) {
+    padding: 100px $pad-x;
+    min-height: 389px;
+  }
+  
+  .sixth-section-container {
+    width: 100%;
+    @include breakpoint(lg-down) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    @include breakpoint(xl) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      column-gap: 8%;
+      padding: 0 140px;
+    }
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .infoimg-container {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    @include breakpoint(xl) {
+      max-width: 400px;
+    }
+  }
+  .infoimg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+  .text {
+    font-family: 'SpaceMono';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $white;
+    text-align: center;
+    max-width: 520px;
+    @include breakpoint(xl) {
+      text-align: right;
+    }
+  }
+  .rightimg-container {
+    @include breakpoint(lg-down) {
+      margin-bottom: 25px;
+    }
+  }
+}
