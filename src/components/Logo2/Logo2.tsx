@@ -5,10 +5,10 @@ function Logo2() {
   return(
     <div className='Logo2'>
       <div className='logo2-container'>
-        <img className="logo2-img" src="/img/PoweredBy1.png" alt="PoweredBy"/>
+        <img className="logo2-img" src="/img/poweredby.svg" alt="PoweredBy"/>
       </div>
       <div className='logo2-container'> 
-        <img className="logo2-img" src="/img/image1.png" alt="immutable"/>
+        <img className="logo2-img" src="/img/immutable.svg" alt="immutable"/>
       </div>
     </div>
   )
