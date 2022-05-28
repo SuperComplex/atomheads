@@ -4,6 +4,7 @@ import TopSection from 'components/TopSection/TopSection';
 import SecondSection from 'components/SecondSection/SecondSection';
 import FourthSection from 'components/FourthSection/FourthSection';
 import FifthSection from 'components/FifthSection/FifthSection';
+import SixthSection from 'components/SixthSection/SixthSection';
 import './App.scss';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <SecondSection/>
       <FourthSection/>
       <FifthSection/>
+      <SixthSection/>
     </div>
   );
 }
