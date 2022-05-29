@@ -1,11 +1,10 @@
 @import 'assets/common.scss';
 .third-section {
-  position: relative;
-    display: flex;
-  padding: 60px 45px 40px;
+  display: flex;
+  padding: 65px $pad-x 50px;
   background-color: $green;
   @include breakpoint(xl) {
-    padding: 80 13% 160px;
+    padding: 130px $pad-x 180px;
     // min-height: 1077px;
   } 
   .third-section-container {
@@ -14,32 +13,16 @@
     width: 100%;
     @include breakpoint(xl) {
       flex-direction: row;
-      padding:  $pad-y  0 0;
+      align-items: center;
     }
   }
   .left-container {
-    padding: 50px 50 0;
     @include breakpoint(xl) {
-      display: flex;
       flex: 1 1 auto;
-      width: 50%;
-      padding: 25px 0 0 50px;
-    }
-  }
-  .right-container {
-    
-    @include breakpoint(lg-down) {
-      align-self: center;
-      max-width: 410px;
-    }
-    @include breakpoint(xl) {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: stretch;
-      flex: 1 1 auto;
       width: 50%;
-      padding: 0 50px;
+      padding: 0 50px 0 100px;
     }
   }
   .img1-container {
@@ -49,40 +32,62 @@
       max-width: 400px;
     }
     @include breakpoint(xl) {
-      width: 60%;
+      width: 90%;
+      max-width: 500px;
     }
     .img1 {
       display: block;
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
-      object-position: center bottom;
+      object-position: center center;
     }
   }
-  .t1 {
-    font-family: 'SpaceMono';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    color: $white;
-    text-align: justify;
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include breakpoint(lg-down) {
-      margin-bottom: 74px;
-      width: 80%;
-      max-width: 600px;
+      margin-bottom: 40px;
+    }
+    @include breakpoint(xl) {
+      flex: 1 1 auto;
+      width: 50%;
+      padding: 0 100px 0 50px;
     }
   }
-  .t2 {
-    font-family: 'SpaceMono';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    color: $white;
-    text-align: justify;
-    @include breakpoint(lg-down) {
-      margin-bottom: 74px;
-      width: 80%;
+  .img2-container {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 25px;
+    @include breakpoint(xl) {
       max-width: 600px;
+      margin-bottom: 17px;
+    }
+  }
+  .img2 {
+    width: 100%;
+    height: auto;
+  }
+  .text {
+    width: 80%;
+    max-width: 500px;
+    @include breakpoint(xl) {
+      max-width: 600px;
+    }
+    p {
+      font-family: 'SpaceMono';
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.5;
+      color: $white;
+      text-align: justify;
+      @include breakpoint(sm) {
+        font-size: 16px;
+      }
+      @include breakpoint(xl) {
+        font-size: 20px;
+      }
     }
   }
 }
