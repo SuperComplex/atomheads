@@ -6,7 +6,7 @@ function FifthSection() {
       <div className="fifth-section-container wrapper">
         
         <div className="anime1-container">
-          <img className="anime-img" src="/img/anime-left.svg" alt="anime-left" />
+          <img className="anime-img" src="/img/hand.gif" alt="anime-left" />
         </div>
 
         <div className="info-container">
@@ -24,7 +24,7 @@ function FifthSection() {
         </div>
         
         <div className="anime2-container">
-          <img className="anime-img" src="/img/anime-right.svg" alt="anime-left" />
+          <img className="anime-img" src="/img/hand.gif" alt="anime-left" />
         </div>
         
       </div>
