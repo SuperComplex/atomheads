@@ -21,7 +21,7 @@ function SixthSection() {
         </div>
 
         <div className="rightimg-container">
-          <img className="rightimg" src="/img/looney.svg" alt="looney" />
+          <img className="rightimg" src="/img/looney.png" alt="looney" />
         </div>
         
       </div>
