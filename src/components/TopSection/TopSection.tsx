@@ -27,7 +27,7 @@ function TopSection() {
         </div>
         <div className="right-container">
           <div className="img2-container">
-            <img className="img2" src="/img/pressicon.svg" alt="logo" />
+            <img className="img2" src="/img/pressicon.gif" alt="logo" />
           </div>
           <div className="img3-container">
             <img className="img3" src="/img/pressfofree.svg" alt="logo" />
