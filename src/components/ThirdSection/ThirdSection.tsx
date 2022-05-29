@@ -6,7 +6,7 @@ function ThirdSection() {
       <div className="third-section-container wrapper">
         <div className="left-container">
           <div className="img1-container">
-            <img className='img1' src="/img/Building.svg" alt="Building"/>
+            <img className='img1' src="/img/building.png" alt="Building"/>
           </div>
         </div> 
         <div className="right-container">
