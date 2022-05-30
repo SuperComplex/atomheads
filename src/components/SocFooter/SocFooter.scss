@@ -1,0 +1,18 @@
+@import 'assets/common.scss';
+.Soc-footer{
+  display: flex;
+  padding: 0 30px;
+  .soc-link {
+    .soc-icon {
+      path {
+        transition: fill .3s ease-in-out;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 40px;
+      @include breakpoint(xl) {
+        margin-right: 50px;
+      }
+    }
+  }
+}
