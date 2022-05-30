@@ -76,7 +76,7 @@ const explanationsEl = (question: String, explanations: Array<string>) => {
 function FAQSection() {
   const [showexplanationsId, setshowexplanationsId] = useState("");
   return (
-    <section className="faq-section">
+    <section className="faq-section" id="faq">
       <div className="faq-section-container">
         <div className="faq-title">
           <img

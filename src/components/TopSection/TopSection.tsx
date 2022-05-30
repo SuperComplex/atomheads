@@ -1,4 +1,5 @@
-import Slider from 'react-slick'
+import Slider from 'react-slick';
+import { Link } from "react-scroll";
 import './TopSection.scss';
 
 const settings = {
@@ -17,7 +18,7 @@ const settings = {
 };
 function TopSection() {
   return (
-    <section className="top-section">
+    <section className="top-section" id="top">
       <div className="top-section-container wrapper">
         <div className="left-container">
           <div className="img1-container">
@@ -27,10 +28,26 @@ function TopSection() {
         </div>
         <div className="right-container">
           <div className="img2-container">
-            <img className="img2" src="/img/pressicon.gif" alt="logo" />
+            <Link
+              to="mint"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1500}
+            >
+              <img className="img2" src="/img/pressicon.gif" alt="logo" />
+            </Link>
           </div>
           <div className="img3-container">
-            <img className="img3" src="/img/pressfofree.svg" alt="logo" />
+            <Link
+              to="mint"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1500}
+            >
+              <img className="img3" src="/img/pressfofree.svg" alt="logo" />
+            </Link>
           </div>
         </div>
         

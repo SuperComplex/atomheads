@@ -2,7 +2,7 @@ import './SeventhSection.scss';
 
 function SeventhSection() {
   return (
-    <section className="seventh-section">
+    <section className="seventh-section" id="details">
       <div className="seventh-section-container wrapper">
         <div className="top-container">
           <div className="topimg1-container">

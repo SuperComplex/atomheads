@@ -2,7 +2,7 @@ import './FourthSection.scss';
 
 function FourthSection() {
   return (
-    <section className="fourth-section">
+    <section className="fourth-section" id="mint">
       <div className="fourth-section-container wrapper">
         
         <div className="info-img-container">

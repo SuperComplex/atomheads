@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Logo2 from 'components/Logo2/Logo2';
 import SocFooter from 'components/SocFooter/SocFooter';
+import { Link } from "react-scroll";
 import "./Footer.scss";
 
 function Footer() {
@@ -9,7 +10,13 @@ function Footer() {
     <section className="Footer">
       <div className="footer-container">
         <div className="f-logo-container">
-          <Link to='/'>
+          <Link
+            to="top"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={4000}
+          >
             <img className="f-logo" src="/img/logofooter.svg" alt="Logo" />
           </Link>
         </div>

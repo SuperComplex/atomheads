@@ -2,7 +2,7 @@ import './ThirdSection.scss';
 
 function ThirdSection() {
   return (
-    <section className="third-section">
+    <section className="third-section" id="about">
       <div className="third-section-container wrapper">
         <div className="left-container">
           <div className="img1-container">
