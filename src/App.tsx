@@ -7,6 +7,7 @@ import FourthSection from 'components/FourthSection/FourthSection';
 import FifthSection from 'components/FifthSection/FifthSection';
 import SixthSection from 'components/SixthSection/SixthSection';
 import SeventhSection from 'components/SeventhSection/SeventhSection';
+import FAQSection from 'components/FAQSection/FAQSection';
 import './App.scss';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <FifthSection/>
       <SixthSection/>
       <SeventhSection/>
+      <FAQSection/>
     </div>
   );
 }
