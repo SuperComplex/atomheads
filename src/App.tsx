@@ -8,6 +8,7 @@ import FifthSection from 'components/FifthSection/FifthSection';
 import SixthSection from 'components/SixthSection/SixthSection';
 import SeventhSection from 'components/SeventhSection/SeventhSection';
 import FAQSection from 'components/FAQSection/FAQSection';
+import FormSection from 'components/FormSection/FormSection';
 import './App.scss';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <SixthSection/>
       <SeventhSection/>
       <FAQSection/>
+      <FormSection/>
     </div>
   );
 }
