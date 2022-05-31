@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import "./FAQSection.scss";
 const questions = [
   {
@@ -40,26 +41,59 @@ const questions = [
   },
   {
     id: "6",
-    question: "How do I  get my own Atomhead?",
+    question: "How do I get my own Atomhead?",
     explanations: [
-      "sometext first paragraph",
-      "sometext second paragraph",
-      "sometext third paragraph",
-      "sometext fourth paragraph",
+      "Atomheads are available and accessible to all. Atomheads are free to claim or if you want a few more rarer traits and atom arrangements, you can mint one",
     ],
   },
   {
     id: "7",
-    question: "How do enter the atomic universe",
+    question: "How do I enter the Atomic Universe?",
     explanations: [
-      "sometext first paragraph",
-      "sometext second paragraph",
-      "sometext third paragraph",
+      "All Atomheads live in the web3 Vaccuum called Discord - join us alongside other Atomheads and build the bonds which make up Web3.0:",
     ],
   },
 ];
-const explanationsEl = (question: String, explanations: Array<string>) => {
-  return (
+const explanationsEl = ({id, question, explanations}:{id: string;question: string;explanations: string[];}) => {
+  // const {id, question, explanations} = el;
+  if(id === '6') {
+    return (
+      <div className="question-explanations">
+        <p className="expl-title">{question}</p>
+        {explanations && explanations.length ? (
+          <div className="expl-text">
+            <p>
+              {explanations[0]}&nbsp;
+              <Link
+                activeClass="active"
+                to="mint"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
+                here
+              </Link>
+            </p>
+          </div>
+        ) : null}
+      </div>
+    )
+  } else if(id === '7') {
+    return (
+      <div className="question-explanations">
+        <p className="expl-title">{question}</p>
+        {explanations && explanations.length ? (
+          <div className="expl-text">
+            <p>
+              {explanations[0]}&nbsp;
+              <a href="http://atomheads.opshyk.click" target="_blank" rel="noreferrer">link</a>
+            </p>
+          </div>
+        ) : null}
+      </div>
+    )
+  } else return (
     <div className="question-explanations">
       <p className="expl-title">{question}</p>
       {explanations && explanations.length ? (
@@ -98,7 +132,8 @@ function FAQSection() {
                   {showexplanationsId !== el.id ? (
                     <div className="question">{el.question}</div>
                   ) : (
-                    explanationsEl(el.question, el.explanations)
+                    // explanationsEl(el.question, el.explanations)
+                    explanationsEl(el)
                   )}
                 </li>
               );
