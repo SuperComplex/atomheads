@@ -6,7 +6,7 @@ function SeventhSection() {
       <div className="seventh-section-container wrapper">
         <div className="top-container">
           <div className="topimg1-container">
-            <img className="img" src="/img/walking.png" alt="walking" />
+            <img className="img" src="/img/walking.gif" alt="walking" />
           </div>
           <div className="topimg2-container">
             <img className="img" src="/img/details.svg" alt="details" />

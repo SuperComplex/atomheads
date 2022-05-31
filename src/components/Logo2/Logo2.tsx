@@ -8,7 +8,7 @@ function Logo2() {
         <img className="logo2-img" src="/img/poweredby.svg" alt="PoweredBy"/>
       </div>
       <div className='logo2-container'> 
-        <img className="logo2-img" src="/img/immutable.svg" alt="immutable"/>
+        <img className="logo2-img" src="/img/immutable.png" alt="immutable"/>
       </div>
     </div>
   )
