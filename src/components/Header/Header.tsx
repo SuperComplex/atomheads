@@ -4,6 +4,7 @@ import Nav from 'components/Nav/Nav';
 import Soc from 'components/Soc/Soc';
 import Logo2 from 'components/Logo2/Logo2';
 import Menu from 'components/Menu/Menu';
+import Connect from 'components/Connect/Connect';
 import { ReactComponent as HmbBtn } from "assets/icons/humb-btn.svg";
 import './Header.scss';
 
@@ -38,9 +39,7 @@ function Header() {
           <Nav/>
           <Logo2/>
           <Soc/>
-          <button className="connect-wallet">
-            Connect wallet
-          </button>
+          <Connect/>
           </Fragment>
       )}
     </header>

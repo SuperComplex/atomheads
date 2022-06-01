@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import Soc from 'components/Soc/Soc';
+import Connect from 'components/Connect/Connect';
 import { ReactComponent as CloseBtn } from "assets/icons/close-btn.svg";
 import './Menu.scss';
 
@@ -84,9 +85,7 @@ function Menu({ toggleMenu }:{toggleMenu: (a:boolean) => void}) {
           </ul>
         </nav>
         <Soc/>
-        <button className="connect-wallet">
-          Connect wallet
-        </button>
+        <Connect/>
       </div>
     </div>
   );
