@@ -3,7 +3,7 @@ import './Logo.scss';
 
 function Logo() {
   return (
-    <Link to='/'>
+    <Link className="Logo" to='/'>
       <div className="logo-container">
       </div>
     </Link>

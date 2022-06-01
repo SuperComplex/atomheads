@@ -10,18 +10,14 @@
   height: 50px;
   width: 100%;
   height: $header-sm-height;
-  padding: 15px 20px;
-  // border: 1px solid #aaa;
+  padding: 5px 20px;
   @include breakpoint(xl) {
     height: $header-height;
     padding: 15px 35px;
   }
 }
 .connect-wallet {
-  display: none;
-  @include breakpoint(xl) {
-    display: inline-flex;
-  }
+  display: inline-flex;
   @include outline(0);
   justify-content: center;
   align-items: center;
@@ -43,3 +39,5 @@
     color: $black;
   }
 }
+// .Hmb {
+// }

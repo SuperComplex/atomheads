@@ -10,12 +10,12 @@ function SixthSection() {
           </div>
           <div className="text">
             <p>
-              Web3 Law of Matter states:
-              “ no atoms can be made or lost 
+              Web3 Law of Matter states:<br/>
+              “no atoms can be made or lost 
               in a reaction, only rearranged”
             </p>
             <p>
-              450 Traits, all randomnly arranged and stored forever on the blockchain.
+              450 Traits, all randomly arranged and stored immutably on the blockchain.
             </p>
           </div>
         </div>

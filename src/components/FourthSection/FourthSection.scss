@@ -19,7 +19,7 @@
     }
     @include breakpoint(xl) {
       display: grid;
-      grid-template-columns: repeat(2,31%);
+      grid-template-columns: repeat(2,33%);
       justify-content: center;
       align-items: center;
       grid-gap: 95px 13%;
@@ -46,7 +46,7 @@
     font-size: 20px;
     line-height: 1.5;
     color: $white;
-    text-align: justify;
+    text-align: left;
     @include breakpoint(lg-down) {
       margin-bottom: 74px;
       width: 80%;

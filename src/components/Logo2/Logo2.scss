@@ -1,9 +1,11 @@
 @import 'assets/common.scss';
 .Logo2 {
-  flex: 1 1 auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  @include breakpoint(xl) {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
   .logo2-container {
     &:first-child {
       width: 80px;
