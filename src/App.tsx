@@ -10,7 +10,6 @@ import SeventhSection from 'components/SeventhSection/SeventhSection';
 import FAQSection from 'components/FAQSection/FAQSection';
 import FormSection from 'components/FormSection/FormSection';
 import Footer from 'components/Footer/Footer';
-import './App.scss';
 
 function App() {
   return (
