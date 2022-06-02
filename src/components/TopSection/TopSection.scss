@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   padding: $header-sm-height $pad-x 180px;
-  background-color: $yellow;
+  background-color: $top-background-color;
   min-height: 100vh;
   @include breakpoint(xl) {
     // min-height: 959px;
