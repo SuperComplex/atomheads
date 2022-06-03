@@ -138,13 +138,13 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     @include breakpoint(sm) {
-      animation-duration: 60s;
+      animation-duration: 80s;
     }
     @include breakpoint(lg) {
-      animation-duration: 40s;
+      animation-duration: 70s;
     }
     @include breakpoint(xl) {
-      animation-duration: 30s;
+      animation-duration: 60s;
     }
   }
 }
