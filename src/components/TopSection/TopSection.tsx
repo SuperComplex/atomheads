@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 // import Slider from 'react-slick';
 import GifPlayer from 'react-gif-player';
 import * as Scroll from 'react-scroll';
-// import { Link, animateScroll } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 import './TopSection.scss';
 
 
