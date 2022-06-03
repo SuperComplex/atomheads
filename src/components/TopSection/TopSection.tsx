@@ -30,15 +30,20 @@ function TopSection() {
   }
   useEffect(() => {
     if(playing) {
+      // start scroll in moment when touch to button
       setTimeout(()=>{
-        clickAnimeElement();//for stop anime
+        // clickAnimeElement();//for stop anime
         Scroll.scroller.scrollTo('mint', {
           spy: true,
           smooth: true,
           offset: 0,
           delay: 0,//!!
-          duration: 1500,
+          duration: 1000,
         });
+      },1900)
+      // stop animation when finish full cicle of animation
+      setTimeout(()=>{
+        clickAnimeElement();//for stop anime
       },2500)
     }
   },[playing]);
@@ -52,38 +57,19 @@ function TopSection() {
           <p className="top-text">The <span className="accent">FREE,</span> infinitely Inclusive & Carbon Neutral NFT</p>
         </div>
         <div className="right-container">
-          <div className="img2-container">
-            {/* <Link
-              to="mint"
-              spy={true}
-              smooth={true}
-              offset={0}
-              delay={2500}
-              duration={1500}
-            > */}
-              {/* <img className="img2" src="/img/pressicon.gif" alt="logo" /> */}
-              <GifPlayer
-                className="img2"
-                gif="/img/pressicon.gif"
-                // still="/img/pressicon_frame_0.gif"
-                onTogglePlay={ (playing: boolean) => setPlaying(playing) }
-                // pauseRef={ (pause: any) => setPauseGif(pause) }
-                // ref={myAnime}
-              />
-            {/* </Link> */}
+          <div className={`img2-container${playing?' click-off':''}`}>
+            {/* <img className="img2" src="/img/pressicon.gif" alt="logo" /> */}
+            <GifPlayer
+              className="img2"
+              gif="/img/pressicon.gif"
+              // still="/img/pressicon_frame_0.gif"
+              onTogglePlay={ (playing: boolean) => setPlaying(playing) }
+              // pauseRef={ (pause: any) => setPauseGif(pause) }
+              // ref={myAnime}
+            />
           </div>
           <div className="img3-container">
-            {/* <Link
-              to="mint"
-              spy={true}
-              smooth={true}
-              offset={0}
-              delay={2500}
-              duration={1500}
-              onClick={clickAnimeElement}
-            > */}
-              <img className="img3" src="/img/pressfofree.svg" alt="logo" onClick={clickAnimeElement}/>
-            {/* </Link> */}
+            <img className={`img3${playing?' click-off':''}`} src="/img/pressfofree.svg" alt="logo" onClick={clickAnimeElement}/>
           </div>
         </div>
         
