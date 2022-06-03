@@ -41,7 +41,7 @@
   }
   
   .t1 {
-    font-family: 'Space Mono';
+    font-family: $font-base;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
@@ -209,7 +209,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Space Mono';
+      font-family: $font-base;
       font-weight: 700;
       line-height: 1.5;
       text-align: center;
