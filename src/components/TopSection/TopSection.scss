@@ -7,6 +7,9 @@
   position: relative;
   display: flex;
   padding: $header-sm-height $pad-x 180px;
+  @media screen and (max-height: 700px) {
+    padding: $header-sm-height $pad-x 100px;
+  }
   background-color: $top-background-color;
   min-height: 100vh;
   @include breakpoint(xl) {
@@ -70,6 +73,10 @@
       width: 73%;
       margin-bottom: 30px;
       max-width: 300px;
+    }
+    @media screen and (max-height: 700px) {
+      margin-bottom: 15px;
+      max-width: 185px;
     }
     @include breakpoint(xl) {
       width: 68%;
