@@ -1,24 +1,11 @@
 import React, { useState, useEffect} from 'react';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import GifPlayer from 'react-gif-player';
 import * as Scroll from 'react-scroll';
-import { Link, animateScroll } from "react-scroll";
+// import { Link, animateScroll } from "react-scroll";
 import './TopSection.scss';
 
-const settings = {
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  variableWidth: true,
-  speed: 7000,
-  autoplaySpeed: 0,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  cssEase: "linear",
-  pauseOnHover: false,
-  draggable: false,
-  arrows: false,
-};
+
 function TopSection() {
   // const myAnime = useRef<HTMLElement>(null);
   const[playing, setPlaying] = useState(false);
@@ -74,68 +61,6 @@ function TopSection() {
         </div>
         
         <div className="bottom-bg">
-          <Slider {...settings}>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-1.png" alt="slide1" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-2.png" alt="slide2" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-3.png" alt="slide3" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-4.png" alt="slide4" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-5.png" alt="slide5" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-6.png" alt="slide6" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-1.png" alt="slide7" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-2.png" alt="slide8" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-3.png" alt="slide9" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-4.png" alt="slide10" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-5.png" alt="slide11" />
-              </div>
-            </div>
-            <div>
-              <div className="slide">
-                <img className="img" src="/img/ax-6.png" alt="slide12" />
-              </div>
-            </div>
-          </Slider>
         </div>
       </div>
     </section>
@@ -143,11 +68,3 @@ function TopSection() {
 }
 
 export default TopSection;
-function button(button: any): any {
-  throw new Error('Function not implemented.');
-}
-
-function div(div: any): any {
-  throw new Error('Function not implemented.');
-}
-
