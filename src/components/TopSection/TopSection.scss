@@ -9,9 +9,6 @@
   padding: $header-sm-height $pad-x 180px;
   background-color: $top-background-color;
   min-height: 100vh;
-  @media screen and (max-height: 800px) {
-    height: 100vh;
-  }
   @include breakpoint(xl) {
     // min-height: 959px;
     padding: $header-height $pad-x 230px;
