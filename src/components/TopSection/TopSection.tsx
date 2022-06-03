@@ -26,21 +26,20 @@ function TopSection() {
   const clickAnimeElement = () => {
     // myAnime.current?.click()
     let playButton:HTMLElement = document.querySelector('.play_button') as HTMLElement;
-   
     playButton.click();
   }
   useEffect(() => {
     if(playing) {
       setTimeout(()=>{
-        clickAnimeElement();
+        clickAnimeElement();//for stop anime
         Scroll.scroller.scrollTo('mint', {
           spy: true,
           smooth: true,
           offset: 0,
           delay: 0,//!!
           duration: 1500,
-        })}
-        ,2500)
+        });
+      },2500)
     }
   },[playing]);
   return (
@@ -74,7 +73,7 @@ function TopSection() {
             {/* </Link> */}
           </div>
           <div className="img3-container">
-            <Link
+            {/* <Link
               to="mint"
               spy={true}
               smooth={true}
@@ -82,9 +81,9 @@ function TopSection() {
               delay={2500}
               duration={1500}
               onClick={clickAnimeElement}
-            >
-              <img className="img3" src="/img/pressfofree.svg" alt="logo" />
-            </Link>
+            > */}
+              <img className="img3" src="/img/pressfofree.svg" alt="logo" onClick={clickAnimeElement}/>
+            {/* </Link> */}
           </div>
         </div>
         
