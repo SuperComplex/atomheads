@@ -10,10 +10,11 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 html {
-  box-sizing: border-box; 
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+  box-sizing: border-box;
+  min-height: 100%;
+  // background: linear-gradient(0deg, $black 0%, $black 50%, $top-background-color 50%,$top-background-color 100%);
+  background: $top-background-color;
+  // overflow: hidden; //crash the scroll
 }
 *,
 *:before,
@@ -22,12 +23,12 @@ html {
 }
 body {  
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   word-break: break-word;
   background: linear-gradient(0deg, $black 0%, $black 50%, $top-background-color 50%,$top-background-color 100%);
-  overflow: auto;
+  // overflow: auto;
 }
 #root{
   height: 100%;

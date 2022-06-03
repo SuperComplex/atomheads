@@ -1,5 +1,8 @@
+import React, { useState, useEffect} from 'react';
 import Slider from 'react-slick';
-import { Link } from "react-scroll";
+import GifPlayer from 'react-gif-player';
+import * as Scroll from 'react-scroll';
+import { Link, animateScroll } from "react-scroll";
 import './TopSection.scss';
 
 const settings = {
@@ -17,6 +20,29 @@ const settings = {
   arrows: false,
 };
 function TopSection() {
+  // const myAnime = useRef<HTMLElement>(null);
+  const[playing, setPlaying] = useState(false);
+  // const[pauseGif, setPauseGif] = useState(true);
+  const clickAnimeElement = () => {
+    // myAnime.current?.click()
+    let playButton:HTMLElement = document.querySelector('.play_button') as HTMLElement;
+   
+    playButton.click();
+  }
+  useEffect(() => {
+    if(playing) {
+      setTimeout(()=>{
+        clickAnimeElement();
+        Scroll.scroller.scrollTo('mint', {
+          spy: true,
+          smooth: true,
+          offset: 0,
+          delay: 0,//!!
+          duration: 1500,
+        })}
+        ,2500)
+    }
+  },[playing]);
   return (
     <section className="top-section" id="top">
       <div className="top-section-container wrapper">
@@ -28,15 +54,24 @@ function TopSection() {
         </div>
         <div className="right-container">
           <div className="img2-container">
-            <Link
+            {/* <Link
               to="mint"
               spy={true}
               smooth={true}
               offset={0}
+              delay={2500}
               duration={1500}
-            >
-              <img className="img2" src="/img/pressicon.gif" alt="logo" />
-            </Link>
+            > */}
+              {/* <img className="img2" src="/img/pressicon.gif" alt="logo" /> */}
+              <GifPlayer
+                className="img2"
+                gif="/img/pressicon.gif"
+                // still="/img/pressicon_frame_0.gif"
+                onTogglePlay={ (playing: boolean) => setPlaying(playing) }
+                // pauseRef={ (pause: any) => setPauseGif(pause) }
+                // ref={myAnime}
+              />
+            {/* </Link> */}
           </div>
           <div className="img3-container">
             <Link
@@ -44,7 +79,9 @@ function TopSection() {
               spy={true}
               smooth={true}
               offset={0}
+              delay={2500}
               duration={1500}
+              onClick={clickAnimeElement}
             >
               <img className="img3" src="/img/pressfofree.svg" alt="logo" />
             </Link>
@@ -121,3 +158,11 @@ function TopSection() {
 }
 
 export default TopSection;
+function button(button: any): any {
+  throw new Error('Function not implemented.');
+}
+
+function div(div: any): any {
+  throw new Error('Function not implemented.');
+}
+
